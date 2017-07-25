@@ -1,0 +1,29 @@
+{
+  "name": "stack-pack-util",
+  "description": "A stack package",
+  "version": "0.1.0",
+  "author": "GoodPractice",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/gp-technical/stack-pack-util#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gp-technical/stack-pack-util"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel --presets latest,stage-2 -d build/ src/",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "eslint": "^3.6.1",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
