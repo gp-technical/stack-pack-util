@@ -1,28 +1,4 @@
-const bc = '-----BEGIN CERTIFICATE-----'
-const ec = '-----END CERTIFICATE-----'
-const bpk = '-----BEGIN PRIVATE KEY-----'
-const epk = '-----END PRIVATE KEY-----'
-const nl = '\n'
+import sleep from './sleep'
+import x509 from './x509'
 
-const format = (begin, end, cert) => {
-  cert = cert.replace(begin, '')
-  cert = cert.replace(end, '')
-  cert = cert.match(/.{1,76}/g).join(nl)
-  return `${begin}${nl}${cert}${nl}${end}`
-}
-
-const formatPublicCertificate = (cert) => {
-  return format(bc, ec, cert)
-}
-
-const formatPrivateKey = (cert) => {
-  return format(bpk, epk, cert)
-}
-
-
-
-const sleep = (ms) => {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
-
-export default {sleep, formatPublicCertificate, formatPrivateKey}
+export {sleep, x509 }
