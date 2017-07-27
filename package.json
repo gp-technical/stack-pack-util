@@ -1,5 +1,5 @@
 {
-  "name": "stack-pack-util",
+  "name": "@gp-technical/stack-pack-util",
   "description": "A stack package",
   "version": "0.1.0",
   "author": "GoodPractice",
