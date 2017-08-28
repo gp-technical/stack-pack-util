@@ -1,7 +1,7 @@
 {
   "name": "@gp-technical/stack-pack-util",
   "description": "A stack package",
-  "version": "0.1.1",
+  "version": "1.1.0",
   "author": "GoodPractice",
   "license": "UNLICENSED",
   "homepage": "https://github.com/gp-technical/stack-pack-util#readme",
@@ -17,20 +17,15 @@
   "swapDep": {
     "local": {
       "dep": {},
-      "dev": {
-        "@gp-technical/stack-pack-dev": "file:../stack-pack-dev"
-      }
+      "dev": {}
     },
     "published": {
       "dep": {},
-      "dev": {
-        "@gp-technical/stack-pack-dev": "0.1.0"
-      }
+      "dev": {}
     }
   },
   "dependencies": {},
   "devDependencies": {
-    "@gp-technical/stack-pack-dev": "0.1.0",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.16.0",
     "babel-eslint": "^7.0.0",
