@@ -12,7 +12,7 @@
   "main": "build/index.js",
   "scripts": {
     "lint": "eslint swap.js src",
-    "build": "babel --presets latest,stage-2 -d build/ src/",
+    "build": "babel --presets env,stage-2 -d build/ src/",
     "prepublishOnly": "npm run build"
   },
   "swapDep": {
@@ -31,7 +31,7 @@
     "babel-eslint": "^8.2.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.17.0",
-    "eslint": "^5.0.0-alpha.1",
+    "eslint": "4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^3.1.0"
