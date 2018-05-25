@@ -11,12 +11,12 @@ const format = (begin, end, cert) => {
   return `${begin}${nl}${cert}${nl}${end}`
 }
 
-const formatPublicCertificate = (cert) => {
+const formatPublicCertificate = cert => {
   return format(bc, ec, cert)
 }
 
-const formatPrivateKey = (cert) => {
+const formatPrivateKey = cert => {
   return format(bpk, epk, cert)
 }
 
-export default {formatPublicCertificate, formatPrivateKey}
+export default { formatPublicCertificate, formatPrivateKey }
