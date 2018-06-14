@@ -1,7 +1,7 @@
 {
   "name": "@gp-technical/stack-pack-util",
   "description": "A stack package",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0",
   "author": "GoodPractice",
   "license": "UNLICENSED",
   "homepage": "https://github.com/gp-technical/stack-pack-util#readme",
@@ -13,8 +13,9 @@
   "scripts": {
     "lint": "sp-lint",
     "precommit": "sp-lint-staged",
+    "build:debug": "yarn build --watch --source-maps inline",
     "build": "babel --presets env,stage-2 -d build/ src/",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "yarn build"
   },
   "standard-engine": "@gp-technical/stack-pack-standard",
   "devDependencies": {
