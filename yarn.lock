@@ -90,10 +90,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@gp-technical/stack-pack-standard@^2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@gp-technical/stack-pack-standard/-/stack-pack-standard-2.3.5.tgz#b3ecde868b45956407e6985ed921289f9b5f6b45"
-  integrity sha512-yVghv5Oth6JD59dQrPkinsFxtMMdL7pcsEnWQ7S3ah7Voy0cDPPHXV8+7IPZXd8zAzNtXdBahtwfdHEbd65oLw==
+"@gp-technical/stack-pack-standard@^2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@gp-technical/stack-pack-standard/-/stack-pack-standard-2.3.6.tgz#0e23675412b49536c4c741fe31c24bed6fecd556"
+  integrity sha512-Wm9C5emQJqs7aH0RY6yL0VEzNluSBbb3Z560/jyvndKV1+n75ixepqu4lDA+ROr+ce9QWDEFlheoks+fJ6ZNvA==
   dependencies:
     babel-cli "^6.26.0"
     babel-core "^6.26.3"
