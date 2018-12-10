@@ -1,7 +1,7 @@
 {
   "name": "@gp-technical/stack-pack-util",
-  "description": "A stack package",
-  "version": "2.0.1",
+  "description": "Utilities for use in stack apps",
+  "version": "3.0.0",
   "author": "GoodPractice",
   "license": "UNLICENSED",
   "homepage": "https://github.com/gp-technical/stack-pack-util#readme",
@@ -22,7 +22,7 @@
     "@gp-technical/stack-pack-standard": "^2.3.6"
   },
   "dependencies": {
-    "le_node": "^1.7.1",
+    "le_node": "^1.8.0",
     "winston": "2.4.4"
   }
 }
