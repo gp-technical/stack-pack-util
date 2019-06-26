@@ -5,13 +5,9 @@ import util from 'util'
 let init = {}
 
 if (process.env.API_LOGENTRIES_TOKEN) {
-  console.log('With logentries token')
-  import('le_node').then(lenode => {
-    init = (token = process.env.API_LOGENTRIES_TOKEN) =>
-      winston.add(winston.transports.Logentries, { token: process.env.API_LOGENTRIES_TOKEN })
-  })
-} else {
-  console.log('Without logentries token')
+  require('le_node')
+  init = (token = process.env.API_LOGENTRIES_TOKEN) =>
+    winston.add(winston.transports.Logentries, { token: process.env.API_LOGENTRIES_TOKEN })
 }
 
 const error = (inner, msg, opts = { depth: Infinity }) => {
